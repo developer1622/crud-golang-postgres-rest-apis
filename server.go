@@ -20,8 +20,6 @@ func main() {
 	checkErr(err)
 	defer db.Close()
 
-	fmt.Println("# Inserting values")
-
 	sqlStatement := `INSERT INTO task VALUES(155452,'dffdf44444d','as44taxie');`
 	_, err = db.Exec(sqlStatement)
 	checkErr(err)
